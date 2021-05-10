@@ -1,0 +1,44 @@
+header{
+    nav{
+    width: 100%;
+    @include my-display-flex;
+    padding: 30px 0;
+
+        // LOGO
+        .logo{
+            width: 20%;
+        }
+        
+        // MENU
+        .menu{
+            width: 80%;
+            ul{
+                @include my-display-flex;
+                padding-left: 100px;
+                justify-content: space-between;
+                li{
+                    text-transform: uppercase;
+                    list-style-type: none;
+                    cursor: pointer;
+                    a{
+                        text-decoration: none;
+                        color: $color-menu-nav;
+                        font-weight: 700;
+                        padding-bottom: 5px;
+
+                        &:hover {
+                            color: $color-hover-link;
+                            border-bottom: 3px solid $color-hover-link;
+                            border-radius: 1px;
+                        }
+                    }
+
+                    .search{
+                        padding-left: 20px;
+                        border-left: 1px solid $color-menu-nav;
+                    }
+                }
+            }
+        }
+    }
+}

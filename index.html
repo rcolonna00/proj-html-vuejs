@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Collega html e CSS -->
+    <link rel="stylesheet" href="dist/app.css">  
+    <!-- Collega html e FONT-AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <!-- Collega html e GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Serve ad utilizzare AJAX -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
+    <!-- Collega html e VUE -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!-- Titolo html -->
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="root">
+
+        <!-- INIZIO HEADER -->
+        <header>
+
+            <!-- INIZIO NAV -->
+            <div class="container">
+                <nav>
+
+                <!-- INIZIO LOGO -->
+                    <div class="logo">
+                        <img src="img/logo.png" alt="logo">
+                    </div>
+                <!-- FINE LOGO -->
+                <!-- INIZIO MENU -->
+                    <div class="menu">
+                        <ul>
+                            <li v-for="(link, index) in menuLink">
+                                <a :class="{active : index == activeMenuLink}" href="#">
+                                    {{link}}
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="search">
+                                    <i class="fas fa-search"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                <!-- FINE MENU -->
+
+
+                </nav>
+            </div>
+            <!-- FINE NAV -->
+
+        </header>
+        <!-- FINE HEADER -->
+
+        <!-- INIZIO MAIN -->
+        <main>
+
+            <!-- INIZIO JUMBOTRON -->
+            <section>
+
+            </section>
+            <!-- FINE JUMBOTRON -->
+
+        </main>
+        <!-- FINE MAIN -->
+
+        <!-- INIZIO FOOTER -->
+        <footer>
+
+        </footer>
+        <!-- FINE FOOTER -->
+
+    </div>
+
+
+    <!-- Collega html a day.js per mettere le DATE -->
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+    <!-- Collega html a JAVASCRIPT -->
+    <script type="text/javascript" src="dist/app.js"></script>
+
+</body>
+</html>

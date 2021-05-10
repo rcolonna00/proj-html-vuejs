@@ -1,1 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
 
+.container {
+  width: 900px;
+  margin: auto;
+}
+
+img {
+  width: 100%;
+}
+
+/* HEADER */
+/* HEADER */
+/* MAIN */
+/* MAIN */
+/* FOOTER */
+/* FOOTER */
+header nav {
+  width: 100%;
+  display: flex;
+  padding: 30px 0;
+}
+header nav .logo {
+  width: 20%;
+}
+header nav .menu {
+  width: 80%;
+}
+header nav .menu ul {
+  display: flex;
+  padding-left: 100px;
+  justify-content: space-between;
+}
+header nav .menu ul li {
+  text-transform: uppercase;
+  list-style-type: none;
+  cursor: pointer;
+}
+header nav .menu ul li a {
+  text-decoration: none;
+  color: #9c9c9c;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+header nav .menu ul li a:hover {
+  color: #f72b0c;
+  border-bottom: 3px solid #f72b0c;
+  border-radius: 1px;
+}
+header nav .menu ul li .search {
+  padding-left: 20px;
+  border-left: 1px solid #9c9c9c;
+}
