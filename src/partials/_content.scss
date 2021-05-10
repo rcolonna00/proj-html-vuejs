@@ -1,0 +1,88 @@
+main{
+    
+    // INIZIO JUMBOTRON
+    #jumbotron{
+        .jumbotron{
+            height: 400px;
+            overflow: hidden;
+            position: relative;
+            img{
+                @include my-centratura-orizzontale-verticale
+            }
+            .conference{
+                text-align: center;
+                text-transform: uppercase;
+                @include my-centratura-orizzontale-verticale;
+                .motto{
+                    h2{
+                        color: white;
+                        font-size: 40px;
+                        font-weight: 300;
+                        padding: 5px;
+                        span{
+                            font-size: 60px;
+                            font-weight: bold;
+                        }
+                    }
+                } 
+                .giorni-conferenza{
+                    color: white;
+                    padding-top: 5px;
+                    border-top: 3px solid white;
+                    font-size: 13px;
+                    width: 61%;
+                    margin: auto;
+                    margin-top: 20px;
+                    span{
+                        padding: 0 10px;
+                    }
+                } 
+                .red-button{
+                    @include my-red-button;
+                    border-radius: 5px;
+                    margin-top: 20px;
+                    font-weight: 500;
+                    font-size: smaller;
+                }
+            }
+        } 
+    }
+    // FINE JUMBOTRON
+
+    // INIZIO DOMANDE FREQUENTI
+    #domande-frequenti{
+        padding: 40px 0;
+        .container{
+            @include my-display-flex;
+            justify-content: space-between;
+
+            .singola-domanda{
+                @include my-display-flex;
+                width: calc(( 100% / 3 ) - 20px );
+                .icon{
+                    width: 15%;
+                    font-size: 24px;
+                    color: $color-menu-nav;
+                }
+                .domanda{
+                    width: 85%;
+                    h3{
+                        font-size: inherit;
+                        text-transform: uppercase;
+                    }
+                    .risposta{
+                        font-size: 12px;
+                        color: $color-menu-nav;
+                        line-height: 20px;
+                        padding: 15px 0;
+                    }
+                    .learn-more{
+                        color: $color-hover-link-button;
+                        font-style: oblique;
+                    }
+                }
+            }
+        }    
+    }
+    // FINE DOMANDE FREQUENTI
+}

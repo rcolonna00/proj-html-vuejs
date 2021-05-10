@@ -25,10 +25,11 @@ header{
                         color: $color-menu-nav;
                         font-weight: 700;
                         padding-bottom: 5px;
+                        font-size: 12px;
 
                         &:hover {
-                            color: $color-hover-link;
-                            border-bottom: 3px solid $color-hover-link;
+                            color: $color-hover-link-button;
+                            border-bottom: 3px solid $color-hover-link-button;
                             border-radius: 1px;
                         }
                     }

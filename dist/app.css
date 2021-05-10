@@ -46,6 +46,7 @@ header nav .menu ul li a {
   color: #9c9c9c;
   font-weight: 700;
   padding-bottom: 5px;
+  font-size: 12px;
 }
 header nav .menu ul li a:hover {
   color: #f72b0c;
@@ -55,4 +56,90 @@ header nav .menu ul li a:hover {
 header nav .menu ul li .search {
   padding-left: 20px;
   border-left: 1px solid #9c9c9c;
+}
+
+main #jumbotron .jumbotron {
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+main #jumbotron .jumbotron img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main #jumbotron .jumbotron .conference {
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main #jumbotron .jumbotron .conference .motto h2 {
+  color: white;
+  font-size: 40px;
+  font-weight: 300;
+  padding: 5px;
+}
+main #jumbotron .jumbotron .conference .motto h2 span {
+  font-size: 60px;
+  font-weight: bold;
+}
+main #jumbotron .jumbotron .conference .giorni-conferenza {
+  color: white;
+  padding-top: 5px;
+  border-top: 3px solid white;
+  font-size: 13px;
+  width: 61%;
+  margin: auto;
+  margin-top: 20px;
+}
+main #jumbotron .jumbotron .conference .giorni-conferenza span {
+  padding: 0 10px;
+}
+main #jumbotron .jumbotron .conference .red-button {
+  color: white;
+  background-color: #f72b0c;
+  padding: 12px 20px;
+  border-color: #f72b0c;
+  text-transform: uppercase;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: smaller;
+}
+main #domande-frequenti {
+  padding: 40px 0;
+}
+main #domande-frequenti .container {
+  display: flex;
+  justify-content: space-between;
+}
+main #domande-frequenti .container .singola-domanda {
+  display: flex;
+  width: calc(( 100% / 3 ) - 20px );
+}
+main #domande-frequenti .container .singola-domanda .icon {
+  width: 15%;
+  font-size: 24px;
+  color: #9c9c9c;
+}
+main #domande-frequenti .container .singola-domanda .domanda {
+  width: 85%;
+}
+main #domande-frequenti .container .singola-domanda .domanda h3 {
+  font-size: inherit;
+  text-transform: uppercase;
+}
+main #domande-frequenti .container .singola-domanda .domanda .risposta {
+  font-size: 12px;
+  color: #9c9c9c;
+  line-height: 20px;
+  padding: 15px 0;
+}
+main #domande-frequenti .container .singola-domanda .domanda .learn-more {
+  color: #f72b0c;
+  font-style: oblique;
 }

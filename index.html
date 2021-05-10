@@ -30,12 +30,12 @@
             <div class="container">
                 <nav>
 
-                <!-- INIZIO LOGO -->
+                    <!-- INIZIO LOGO -->
                     <div class="logo">
                         <img src="img/logo.png" alt="logo">
                     </div>
-                <!-- FINE LOGO -->
-                <!-- INIZIO MENU -->
+                    <!-- FINE LOGO -->
+                    <!-- INIZIO MENU -->
                     <div class="menu">
                         <ul>
                             <li v-for="(link, index) in menuLink">
@@ -50,8 +50,7 @@
                             </li>
                         </ul>
                     </div>
-                <!-- FINE MENU -->
-
+                    <!-- FINE MENU -->
 
                 </nav>
             </div>
@@ -64,10 +63,99 @@
         <main>
 
             <!-- INIZIO JUMBOTRON -->
-            <section>
+            <section id="jumbotron">
+                <div class="jumbotron">
+                    <img src="img/slider-1-bg.jpg" alt="">
+                    <div class="conference">
 
+                        <div class="motto">
+                            <h2>conference on</h2>
+                            <h2><span>social networks</span></h2>
+                        </div>
+                        <div class="giorni-conferenza">
+                            23-26 may 2019 <span>/</span> sans francisco <span>/</span> 8 speakers
+                        </div>
+                        <button class="red-button">
+                            register online
+                        </button>
+
+                    </div>
+                </div>
             </section>
             <!-- FINE JUMBOTRON -->
+
+            <!-- INIZIO DOMANDE FREQUENTI -->
+            <section id="domande-frequenti">
+                <div class="container">
+                    
+                    <!-- INIZIO SINGOLA DOMANDA -->
+                    <div class="singola-domanda">
+
+                        <div class="icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="domanda">
+                            <h3>Who we are</h3>
+                            <div class="risposta">
+                                Donec it elit non mi porta gravida et eget me tus. 
+                                Sed posuere consectetur estat lobo rtis. Cum sociis natoque.
+                            </div>
+                            <div class="learn-more">
+                                Learn More
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- FINE SINGOLA DOMANDA -->
+
+                    <!-- INIZIO SINGOLA DOMANDA -->
+                    <div class="singola-domanda">
+
+                        <div class="icon">                          
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="domanda">
+                            <h3>What we do</h3>
+                            <div class="risposta">
+                                Donec it elit non mi porta gravida et eget me tus. 
+                                Sed posuere consectetur estat lobo rtis. Cum sociis natoque.
+                            </div>
+                            <div class="learn-more">
+                                Learn More
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- FINE SINGOLA DOMANDA -->
+
+                    <!-- INIZIO SINGOLA DOMANDA -->
+                    <div class="singola-domanda">
+
+                        <div class="icon">
+                            <i class="fas fa-question"></i>
+                        </div>
+                        <div class="domanda">
+                            <h3>Why us?</h3>
+                            <div class="risposta">
+                                Donec it elit non mi porta gravida et eget me tus. 
+                                Sed posuere consectetur estat lobo rtis. Cum sociis natoque.
+                            </div>
+                            <div class="learn-more">
+                                Learn More
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- FINE SINGOLA DOMANDA -->
+
+                </div>
+            </section>
+            <!-- FINE DOMANDE FREQUENTI -->
+
+
+            <div class="countdown">
+                <p id="demo"></p>
+            </div>
 
         </main>
         <!-- FINE MAIN -->
@@ -79,6 +167,38 @@
         <!-- FINE FOOTER -->
 
     </div>
+
+
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Jan 5, 2022 15:37:25").getTime();
+        
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+        
+          // Get today's date and time
+          var now = new Date().getTime();
+            
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
+            
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+          // Output the result in an element with id="demo"
+          document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+            
+          // If the count down is over, write some text 
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+    </script>
 
 
     <!-- Collega html a day.js per mettere le DATE -->
