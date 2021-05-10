@@ -1,0 +1,16 @@
+// contiene le VARIABILI
+@import 'partials/variables';
+
+// contiene i MIXINS
+@import 'partials/mixins';
+
+// contiene le PARTI COMUNI
+@import 'partials/common';
+
+
+// contiene l' HEADER del sito
+@import 'partials/header';
+// contiene il MAIN del sito
+@import 'partials/content';
+// contiene il FOOTER del sito
+@import 'partials/footer';
