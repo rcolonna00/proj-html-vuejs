@@ -526,6 +526,70 @@ main #recent-news .articoli .articolo .testo-articolo {
 }
 main #tickets {
   width: 100%;
-  height: 500px;
-  background-image: url(../../img/ticket-bg.jpg);
+  height: 490px;
+  text-align: center;
+  position: relative;
+}
+main #tickets img {
+  height: 100%;
+}
+main #tickets .container {
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main #tickets .container h2 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+main #tickets .container .promozioni {
+  display: flex;
+  padding-top: 25px;
+  justify-content: space-around;
+}
+main #tickets .container .promozioni .promozione {
+  width: calc(( 100% / 3 ) - 20px );
+}
+main #tickets .container .promozioni .promozione .nome-promozione {
+  background-color: #f3f3f3;
+  padding: 20px 0;
+  text-transform: uppercase;
+  overflow: hidden;
+  position: relative;
+}
+main #tickets .container .promozioni .promozione .nome-promozione .prezzo-promozione {
+  padding-top: 5px;
+  font-weight: 700;
+  color: #f72b0c;
+}
+main #tickets .container .promozioni .promozione .nome-promozione .featured {
+  position: absolute;
+  top: 18px;
+  right: -40px;
+  color: white;
+  background-color: #f72b0c;
+  padding: 5px 40px;
+  font-size: 10px;
+  transform: rotate(45deg);
+}
+main #tickets .container .promozioni .promozione .offerte-promozione {
+  padding: 20px 0;
+  background-color: white;
+}
+main #tickets .container .promozioni .promozione .offerte-promozione ul li {
+  list-style-type: none;
+  padding: 10px 0;
+  font-size: 13px;
+  font-style: oblique;
+}
+main #tickets .container .promozioni .promozione .bottone-promozione {
+  background-color: #f72b0c;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 13px;
+  font-weight: 600;
 }

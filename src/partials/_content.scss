@@ -487,8 +487,73 @@ main{
     // INIZIO TICKETS
     #tickets{
         width: 100%;
-        height: 500px;
-        background-image: url(../../img/ticket-bg.jpg);
+        height: 490px;
+        text-align: center;
+        position: relative;
+        img{
+            height: 100%;
+        }
+        .container{
+            position: absolute;
+            @include my-centratura-orizzontale-verticale;
+            h2{
+                color: white;
+                text-transform: uppercase;
+                font-size: 30px;
+            }
+            .promozioni{
+                @include my-display-flex;
+                padding-top: 25px;
+                justify-content: space-around;
+                .promozione{
+                    width: calc(( 100% / 3 ) - 20px );
+                    .nome-promozione{
+                        background-color: $color-background-container;
+                        padding: 20px 0;
+                        text-transform: uppercase;
+                        overflow: hidden;
+                        position: relative;
+                        .prezzo-promozione{
+                            padding-top: 5px;
+                            font-weight: 700;
+                            color: $color-hover-link-button;
+                        }
+                        .featured{
+                            position: absolute;
+                            top: 18px;
+                            right: -40px;
+                            color: white;
+                            background-color: #f72b0c;
+                            padding: 5px 40px;
+                            font-size: 10px;
+                            transform: rotate(
+                        45deg
+                        );
+                        }
+                    }
+                    .offerte-promozione{
+                        padding: 20px 0;
+                        background-color: white;
+                        ul{
+                            li{
+                                list-style-type: none;
+                                padding: 10px 0;
+                                font-size: 13px;
+                                font-style: oblique;
+                            }
+                        }
+                    }
+                    .bottone-promozione{
+                        background-color: $color-hover-link-button;
+                        color: white;
+                        text-transform: uppercase;
+                        font-size: 12px;
+                        padding: 13px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
     }
     // FINE TICKETS
 }
