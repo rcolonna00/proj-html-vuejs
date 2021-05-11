@@ -1,5 +1,4 @@
 main{
-    
     // INIZIO JUMBOTRON
     #jumbotron{
         .jumbotron{
@@ -307,12 +306,13 @@ main{
 
     // INIZIO MAPPA 
     #mappa{
-        margin-bottom: 500px;
         position: relative;
+        margin-bottom: 10px;
+        overflow: hidden;
         .scorrimento-mappa{
             width: 100%;
             height: 350px;
-            overflow-y: auto;
+            overflow: hidden;
             @include my-display-flex;
             align-items: center;
             flex-wrap: wrap;
@@ -322,36 +322,174 @@ main{
         }
         .icone{
             position: absolute;
-            background-color: red;
             width: 100%;
-            height: 350px;
+            height: 100%;
             top: 0;
-            .meno ,
-            .piu ,
-            .utente {
-                position: absolute;
-                height: 30px;
-                width: 15px;
-                background-color: white;
-            }
             .meno{
-                bottom: 0;
-                right: 0;
+                position: absolute;
+                height: 22px;
+                width: 22px;
+                background-color: white;
+                padding: 4px;
+                bottom: 20px;
+                right: 85px;
+            }
+            .piu{
+                position: absolute;
+                height: 22px;
+                width: 22px;
+                background-color: white;
+                padding: 4px;
+                bottom: 42px;
+                right: 85px;
+            }
+            .utente{
+                position: absolute;
+                height: 22px;
+                width: 22px;
+                background-color: white;
+                padding: 4px;
+                bottom: 80px;
+                right: 85px;
+                overflow: hidden;
             }
             .google {
                 position: absolute;
                 height: 23px;
                 width: 60px;
+                bottom: 10px;
+                left: 10px;
             }
-            .satellite,
+            .satellite{
+                position: absolute;
+                background-color: white;
+                top: 10px;
+                left: 46px;
+                padding: 5px;
+                font-size: 13px;
+            }
             .map{
                 position: absolute;
                 background-color: white;
-                top: 0;
-                right: 10px;
+                top: 10px;
+                left: 10px;
+                padding: 5px;
+                font-size: 13px;
             }
         }
     }
     // FINE MAPPA 
 
+    // INIZIO LOCATION 
+    #location{
+        width: 100%;
+        height: 350px;
+        color: white;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        .location{
+            width: 100%;
+            @include my-centratura-orizzontale-verticale;
+            h2{
+                letter-spacing: 5px;
+                font-size: 30px;
+            }
+            h3{
+                padding: 35px 0 20px 0;
+                font-size: 24px;
+                letter-spacing: 5px;
+                text-transform: uppercase;
+            }
+            .posizione{
+                font-size: 20px;
+                letter-spacing: 1px;
+            }
+            .red-text{
+                padding: 25px 0 50px 0;
+                font-size: 17px;
+                letter-spacing: 1px;
+                color: $color-hover-link-button;
+            }
+            .phone{
+                margin: auto;
+                border-top: 2px solid white;
+                padding-top: 10px;
+                width: 44%;
+                font-size: 17px;
+                .fa-envelope{
+                    padding-left: 25px;
+                }
+            }
+        }
+    }
+    // FINE LOCATION
+
+    // INIZIO RECENT-NEWS
+    #recent-news{
+        padding: 50px 0;
+        .recent-news-title{
+            @include my-display-flex;
+            justify-content: space-between;
+            h2{
+                @include my-title-h2
+            }
+        }
+        .articoli{
+            @include my-display-flex;
+            justify-content: space-between;
+            padding-top: 40px;
+            .articolo{
+                width: calc(( 100% / 3 ) - 15px );
+                .img-articolo{
+                    position: relative;
+                    .post{
+                        position: absolute;
+                        color: white;
+                        text-transform: uppercase;
+                        background-color: black;
+                        right: 0;
+                        bottom: 4px;
+                        font-size: 10px;
+                        letter-spacing: 2px;
+                        padding: 8px;
+                        display: none;
+                    }
+
+                    &:hover .post{
+                        display: block;
+                    }
+                }
+                .data-articolo{
+                    padding: 20px 0 8px 0;
+                    font-style: oblique;
+                    color: grey;
+                    font-size: 13px;
+                    span{
+                        padding: 0 8px;
+                    }
+                }
+                .titolo-articolo{
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                }
+                .testo-articolo{
+                    padding: 20px 0;
+                    font-size: 11px;
+                    line-height: 20px;
+                    color: grey;
+                }
+            }
+        }
+    }
+    // FINE RECENT-NEWS
+
+    // INIZIO TICKETS
+    #tickets{
+        width: 100%;
+        height: 500px;
+        background-image: url(../../img/ticket-bg.jpg);
+    }
+    // FINE TICKETS
 }
+   

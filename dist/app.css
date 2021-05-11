@@ -351,13 +351,14 @@ main #program .container .introduzione .right img {
   width: 60px;
 }
 main #mappa {
-  margin-bottom: 500px;
   position: relative;
+  margin-bottom: 10px;
+  overflow: hidden;
 }
 main #mappa .scorrimento-mappa {
   width: 100%;
   height: 350px;
-  overflow-y: auto;
+  overflow: hidden;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -367,32 +368,164 @@ main #mappa .scorrimento-mappa img {
 }
 main #mappa .icone {
   position: absolute;
-  background-color: red;
   width: 100%;
-  height: 350px;
+  height: 100%;
   top: 0;
 }
-main #mappa .icone .meno,
-main #mappa .icone .piu,
+main #mappa .icone .meno {
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  background-color: white;
+  padding: 4px;
+  bottom: 20px;
+  right: 85px;
+}
+main #mappa .icone .piu {
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  background-color: white;
+  padding: 4px;
+  bottom: 42px;
+  right: 85px;
+}
 main #mappa .icone .utente {
   position: absolute;
-  height: 30px;
-  width: 15px;
+  height: 22px;
+  width: 22px;
   background-color: white;
-}
-main #mappa .icone .meno {
-  bottom: 0;
-  right: 0;
+  padding: 4px;
+  bottom: 80px;
+  right: 85px;
+  overflow: hidden;
 }
 main #mappa .icone .google {
   position: absolute;
   height: 23px;
   width: 60px;
+  bottom: 10px;
+  left: 10px;
 }
-main #mappa .icone .satellite,
+main #mappa .icone .satellite {
+  position: absolute;
+  background-color: white;
+  top: 10px;
+  left: 46px;
+  padding: 5px;
+  font-size: 13px;
+}
 main #mappa .icone .map {
   position: absolute;
   background-color: white;
-  top: 0;
-  right: 10px;
+  top: 10px;
+  left: 10px;
+  padding: 5px;
+  font-size: 13px;
+}
+main #location {
+  width: 100%;
+  height: 350px;
+  color: white;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+main #location .location {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main #location .location h2 {
+  letter-spacing: 5px;
+  font-size: 30px;
+}
+main #location .location h3 {
+  padding: 35px 0 20px 0;
+  font-size: 24px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+main #location .location .posizione {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+main #location .location .red-text {
+  padding: 25px 0 50px 0;
+  font-size: 17px;
+  letter-spacing: 1px;
+  color: #f72b0c;
+}
+main #location .location .phone {
+  margin: auto;
+  border-top: 2px solid white;
+  padding-top: 10px;
+  width: 44%;
+  font-size: 17px;
+}
+main #location .location .phone .fa-envelope {
+  padding-left: 25px;
+}
+main #recent-news {
+  padding: 50px 0;
+}
+main #recent-news .recent-news-title {
+  display: flex;
+  justify-content: space-between;
+}
+main #recent-news .recent-news-title h2 {
+  letter-spacing: 2px;
+  font-size: 25px;
+}
+main #recent-news .articoli {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+main #recent-news .articoli .articolo {
+  width: calc(( 100% / 3 ) - 15px );
+}
+main #recent-news .articoli .articolo .img-articolo {
+  position: relative;
+}
+main #recent-news .articoli .articolo .img-articolo .post {
+  position: absolute;
+  color: white;
+  text-transform: uppercase;
+  background-color: black;
+  right: 0;
+  bottom: 4px;
+  font-size: 10px;
+  letter-spacing: 2px;
+  padding: 8px;
+  display: none;
+}
+main #recent-news .articoli .articolo .img-articolo:hover .post {
+  display: block;
+}
+main #recent-news .articoli .articolo .data-articolo {
+  padding: 20px 0 8px 0;
+  font-style: oblique;
+  color: grey;
+  font-size: 13px;
+}
+main #recent-news .articoli .articolo .data-articolo span {
+  padding: 0 8px;
+}
+main #recent-news .articoli .articolo .titolo-articolo {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+main #recent-news .articoli .articolo .testo-articolo {
+  padding: 20px 0;
+  font-size: 11px;
+  line-height: 20px;
+  color: grey;
+}
+main #tickets {
+  width: 100%;
+  height: 500px;
+  background-image: url(../../img/ticket-bg.jpg);
 }
