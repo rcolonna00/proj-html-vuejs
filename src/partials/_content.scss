@@ -76,13 +76,234 @@ main{
                         line-height: 20px;
                         padding: 15px 0;
                     }
-                    .learn-more{
-                        color: $color-hover-link-button;
-                        font-style: oblique;
-                    }
                 }
             }
         }    
     }
     // FINE DOMANDE FREQUENTI
+
+    // INIZIO COUNTDOWN
+    #countdown{
+        text-transform: uppercase;
+        height: 400px;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        img{
+            @include my-centratura-orizzontale-verticale;
+        }
+
+        .centratura{
+            @include my-centratura-orizzontale-verticale;
+            .countdown{
+                @include my-display-flex;
+                color: white;
+                .container-days{
+                    background-color: rgba( 0, 0, 0, 0.65);
+                    @include my-setup-base-countdown
+                }
+                .container-hours{
+                    background-color: rgba( 0, 0, 0, 0.55);
+                    margin: 0 10px;
+                    @include my-setup-base-countdown
+                }
+                .container-mins{
+                    background-color: rgba( 0, 0, 0, 0.5);
+                    @include my-setup-base-countdown
+                }
+                .container-secs{
+                    background-color: rgba( 0, 0, 0, 0.45);
+                    margin-left: 15px;
+                    @include my-setup-base-countdown
+                }
+            }
+            #days,
+            #hours,
+            #mins,
+            #secs{
+                @include my-font-number
+            }
+            .subscribe{
+                h3{
+                    text-transform: uppercase;
+                    padding: 40px 0;
+                    letter-spacing: 3px;
+                }
+                input{
+                    border: none;
+                    width: 60%;
+                    padding: 13px;
+                    margin-right: 8px;
+                }
+                button{
+                    @include my-red-button
+                }
+            }
+        }
+    }
+    // FINE COUNTDOWN
+
+    // INIZIO SPEAKERS
+    #speakers{
+        padding: 40px 0;
+        background-color: $color-background-container;
+        .container{
+            .speakers-bar{
+                @include my-display-flex;
+                align-items: center;
+                justify-content: space-between;
+                h2{
+                    @include my-title-h2
+                }
+                .arrow-icon{
+                    i{
+                        font-size: 12px;
+                        background-color: $color-hover-link-button;
+                        color: white;
+                        padding: 8px;
+                        border-radius: 3px;
+                    }
+                }
+            }
+            .speakers-people{
+                padding: 35px 0 20px 0;
+                @include my-display-flex;
+                justify-content: space-around;
+                
+                // INIZIO SINGLE PEOPLE
+                .single-people{
+                    text-align: center;
+                    width: calc(( 100% / 4) - 30px );
+
+                    .single-img{
+                        position: relative;
+                        .speakers-hover{
+                            width: 100%;
+                            height: 100%;
+                            background-color: rgba(247, 43, 12, 0.6);
+                            color: white;
+                            top: 0;
+                            left: 0;
+                            display: none;
+
+                            i{
+                                padding-left: 15px;
+                                font-size: 25px;
+                                line-height: 140.08px;
+                            }
+                        }   
+                    }
+                    .single-img:hover .speakers-hover{
+                        position: absolute;
+                        display: block;
+                    }  
+                    .name{
+                        h4{
+                            padding: 10px 0;
+                            text-transform: uppercase;
+                            letter-spacing: 1px;
+                        }
+                        .ruolo{
+                            color: $color-menu-nav;
+                            font-style: oblique;
+                            font-size: 13px;
+                        }
+                    }
+                }    
+                // FINE SINGLE PEOPLE
+
+            }            
+        }
+    }
+    // FINE SPEAKERS
+
+    // INIZIO PROGRAM
+        #program{
+            padding: 70px 0 50px 0;
+            .container{
+
+                // INIZIO TITOLO
+                .titolo{
+                    @include my-display-flex;
+                    align-items: center;
+                    padding-bottom: 40px;
+                    h2{
+                        width: 20%;
+                        @include my-title-h2
+                    }
+                    .programma{
+                        width: 60%;
+                        font-size: 13px;
+                        line-height: 20px;
+                        color: $color-menu-nav;
+                    }
+                    .learn-more{
+                        width: 20%;
+                    }
+                }
+                // FINE TITOLO
+
+                // INIZIO RIGA GIORNI
+                .riga-giorni{
+                    @include my-display-flex;
+
+                    
+                    .colonna{
+                        width: calc( 100% / 6 );
+                        background-color: $color-hover-link-button;
+                        color: white;
+                        padding: 11px;
+                        border-left: 0.5px solid #bf351f;
+                        
+                        &:first-child{
+                        background-color: #bf351f;
+                        } 
+                    }
+                   
+                } 
+                // FINE RIGA GIORNI 
+
+                // INIZIO INTRODUZIONE 
+                .introduzione{
+                    @include my-display-flex;
+                    padding: 50px 35px;
+                    background-color: $color-background-container;
+                    .left{
+                        text-transform: uppercase;
+                        width: 28%;
+                        font-size: 13px;
+                        .riga{
+                            @include my-display-flex;
+                            color: $color-menu-nav;
+                            padding-bottom: 20px;
+                            .icon{
+                                padding-right: 15px;
+                            }
+
+                            &:last-child .text-icon{
+                                color: $color-hover-link-button;
+                            }
+                        }
+                    }
+                    .right{
+                        width: 72%;
+                        h3{
+                            text-transform: uppercase;
+                            letter-spacing: 3px;
+                            font-size: 20px;
+                        }
+                        div{
+                            font-size: 12px;
+                            padding: 25px 0;
+                        }
+                        img{
+                            width: 60px;
+                        }
+                    }
+                }
+                // FINE INTRODUZIONE 
+
+            }
+        }
+    // FINE PROGRAM
 }

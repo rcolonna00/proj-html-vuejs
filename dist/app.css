@@ -14,6 +14,11 @@ img {
   width: 100%;
 }
 
+.learn-more {
+  color: #f72b0c;
+  font-style: oblique;
+}
+
 /* HEADER */
 /* HEADER */
 /* MAIN */
@@ -139,7 +144,208 @@ main #domande-frequenti .container .singola-domanda .domanda .risposta {
   line-height: 20px;
   padding: 15px 0;
 }
-main #domande-frequenti .container .singola-domanda .domanda .learn-more {
-  color: #f72b0c;
+main #countdown {
+  text-transform: uppercase;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+main #countdown img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main #countdown .centratura {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main #countdown .centratura .countdown {
+  display: flex;
+  color: white;
+}
+main #countdown .centratura .countdown .container-days {
+  background-color: rgba(0, 0, 0, 0.65);
+  padding: 15px 35px;
+  text-align: center;
+  border-radius: 3px;
+}
+main #countdown .centratura .countdown .container-hours {
+  background-color: rgba(0, 0, 0, 0.55);
+  margin: 0 10px;
+  padding: 15px 35px;
+  text-align: center;
+  border-radius: 3px;
+}
+main #countdown .centratura .countdown .container-mins {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 15px 35px;
+  text-align: center;
+  border-radius: 3px;
+}
+main #countdown .centratura .countdown .container-secs {
+  background-color: rgba(0, 0, 0, 0.45);
+  margin-left: 15px;
+  padding: 15px 35px;
+  text-align: center;
+  border-radius: 3px;
+}
+main #countdown .centratura #days,
+main #countdown .centratura #hours,
+main #countdown .centratura #mins,
+main #countdown .centratura #secs {
+  font-size: 55px;
+  font-weight: 700;
+}
+main #countdown .centratura .subscribe h3 {
+  text-transform: uppercase;
+  padding: 40px 0;
+  letter-spacing: 3px;
+}
+main #countdown .centratura .subscribe input {
+  border: none;
+  width: 60%;
+  padding: 13px;
+  margin-right: 8px;
+}
+main #countdown .centratura .subscribe button {
+  color: white;
+  background-color: #f72b0c;
+  padding: 12px 20px;
+  border-color: #f72b0c;
+  text-transform: uppercase;
+}
+main #speakers {
+  padding: 40px 0;
+  background-color: #f3f3f3;
+}
+main #speakers .container .speakers-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main #speakers .container .speakers-bar h2 {
+  letter-spacing: 2px;
+  font-size: 25px;
+}
+main #speakers .container .speakers-bar .arrow-icon i {
+  font-size: 12px;
+  background-color: #f72b0c;
+  color: white;
+  padding: 8px;
+  border-radius: 3px;
+}
+main #speakers .container .speakers-people {
+  padding: 35px 0 20px 0;
+  display: flex;
+  justify-content: space-around;
+}
+main #speakers .container .speakers-people .single-people {
+  text-align: center;
+  width: calc(( 100% / 4) - 30px );
+}
+main #speakers .container .speakers-people .single-people .single-img {
+  position: relative;
+}
+main #speakers .container .speakers-people .single-people .single-img .speakers-hover {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(247, 43, 12, 0.6);
+  color: white;
+  top: 0;
+  left: 0;
+  display: none;
+}
+main #speakers .container .speakers-people .single-people .single-img .speakers-hover i {
+  padding-left: 15px;
+  font-size: 25px;
+  line-height: 140.08px;
+}
+main #speakers .container .speakers-people .single-people .single-img:hover .speakers-hover {
+  position: absolute;
+  display: block;
+}
+main #speakers .container .speakers-people .single-people .name h4 {
+  padding: 10px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+main #speakers .container .speakers-people .single-people .name .ruolo {
+  color: #9c9c9c;
   font-style: oblique;
+  font-size: 13px;
+}
+main #program {
+  padding: 70px 0 50px 0;
+}
+main #program .container .titolo {
+  display: flex;
+  align-items: center;
+  padding-bottom: 40px;
+}
+main #program .container .titolo h2 {
+  width: 20%;
+  letter-spacing: 2px;
+  font-size: 25px;
+}
+main #program .container .titolo .programma {
+  width: 60%;
+  font-size: 13px;
+  line-height: 20px;
+  color: #9c9c9c;
+}
+main #program .container .titolo .learn-more {
+  width: 20%;
+}
+main #program .container .riga-giorni {
+  display: flex;
+}
+main #program .container .riga-giorni .colonna {
+  width: calc( 100% / 6 );
+  background-color: #f72b0c;
+  color: white;
+  padding: 11px;
+  border-left: 0.5px solid #bf351f;
+}
+main #program .container .riga-giorni .colonna:first-child {
+  background-color: #bf351f;
+}
+main #program .container .introduzione {
+  display: flex;
+  padding: 50px 35px;
+  background-color: #f3f3f3;
+}
+main #program .container .introduzione .left {
+  text-transform: uppercase;
+  width: 28%;
+  font-size: 13px;
+}
+main #program .container .introduzione .left .riga {
+  display: flex;
+  color: #9c9c9c;
+  padding-bottom: 20px;
+}
+main #program .container .introduzione .left .riga .icon {
+  padding-right: 15px;
+}
+main #program .container .introduzione .left .riga:last-child .text-icon {
+  color: #f72b0c;
+}
+main #program .container .introduzione .right {
+  width: 72%;
+}
+main #program .container .introduzione .right h3 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 20px;
+}
+main #program .container .introduzione .right div {
+  font-size: 12px;
+  padding: 25px 0;
+}
+main #program .container .introduzione .right img {
+  width: 60px;
 }
