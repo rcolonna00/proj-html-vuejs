@@ -593,3 +593,115 @@ main #tickets .container .promozioni .promozione .bottone-promozione {
   padding: 13px;
   font-weight: 600;
 }
+main .presentation-twitter {
+  padding: 40px 0;
+}
+main .presentation-twitter .container {
+  display: flex;
+  justify-content: space-between;
+}
+main .presentation-twitter .container .presentation {
+  width: calc(( 100% / 2 ) - 10px );
+}
+main .presentation-twitter .container .presentation h3 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 22px;
+}
+main .presentation-twitter .container .presentation .video {
+  width: 100%;
+  position: relative;
+}
+main .presentation-twitter .container .presentation .video .img-presentation {
+  width: 90%;
+  margin: auto;
+  padding: 30px 0;
+}
+main .presentation-twitter .container .presentation .video .barra {
+  display: flex;
+  position: absolute;
+  height: 50px;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  align-items: center;
+  border-radius: 5px;
+  justify-content: space-around;
+}
+main .presentation-twitter .container .presentation .video .barra .barra-tempo {
+  width: 65%;
+  height: 10px;
+  border: 1px solid grey;
+  margin-left: 20px;
+}
+main .presentation-twitter .container .presentation .video .barra .fa-play {
+  margin-left: 8px;
+}
+main .presentation-twitter .container .presentation .video .barra .fa-vimeo {
+  margin-right: 8px;
+}
+main .presentation-twitter .container .presentation .video .barra .minuti {
+  position: absolute;
+  background-color: white;
+  color: black;
+  padding: 0px 3px;
+  left: 42px;
+  top: 0;
+}
+main .presentation-twitter .container .twitter-feed {
+  width: calc(( 100% / 2 ) - 10px );
+}
+main .presentation-twitter .container .twitter-feed h3 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 22px;
+  padding-bottom: 30px;
+}
+main .presentation-twitter .container .twitter-feed .singolo-tweet {
+  display: flex;
+  padding-bottom: 20px;
+}
+main .presentation-twitter .container .twitter-feed .singolo-tweet .icon-twitter {
+  font-size: 23px;
+  padding: 15px;
+  color: #47bdee;
+}
+main .presentation-twitter .container .twitter-feed .singolo-tweet .tweet p {
+  line-height: 25px;
+  font-size: 11px;
+}
+main .presentation-twitter .container .twitter-feed .singolo-tweet .tweet p a {
+  text-decoration: none;
+  color: #f72b0c;
+}
+main .presentation-twitter .container .twitter-feed .singolo-tweet .tweet .day {
+  padding-top: 10px;
+  font-style: oblique;
+  color: #9c9c9c;
+}
+main #sponsors {
+  text-align: center;
+  padding: 40px 0;
+  background-color: #f3f3f3;
+}
+main #sponsors h2 {
+  letter-spacing: 2px;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+main #sponsors p {
+  line-height: 20px;
+  margin: auto;
+  width: 40%;
+  font-size: 15px;
+  padding: 18px 0 30px 0;
+}
+main #sponsors .sponsor {
+  display: flex;
+  justify-content: space-between;
+}
+main #sponsors .sponsor img {
+  width: 130px;
+}
