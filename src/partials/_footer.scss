@@ -1,0 +1,100 @@
+footer{
+    .footer-top{
+        padding: 50px 0;
+        background-color: black;
+        width: 100%;
+
+        .container{
+        color: lightgray;
+        @include my-display-flex;
+        justify-content: space-between;
+        padding: 50px 0;
+        font-size: 13px;
+            h3{
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                font-size: 12px;
+                padding-bottom: 20px;
+            }
+            p{
+                line-height: 20px;
+                padding-bottom: 20px;
+                font-size: 11px;
+            }
+            .colonna-1{
+                width: calc(( 100% / 4 ) - 30px );
+                .icon{
+                    ul{
+                        @include my-display-flex;
+                        justify-content: space-around;
+                        font-size: 25px;
+                        li{
+                            list-style-type: none;
+                            a{
+                                color: white;
+                            }     
+                        }     
+                    }
+                }
+            }
+            .colonna-2{
+                width: calc(( 100% / 4 ) - 30px );
+               li{
+                    list-style-type: none;
+                    a{
+                        color: $color-menu-nav;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        font-size: 10px;
+                        line-height: 35px;
+                        i{
+                            font-size: 7px;
+                            padding-right: 7px;
+                        }
+                    }
+                } 
+            }
+            .colonna-3{
+                width: calc(( 100% / 4 ) - 30px );
+                button{
+                    background-color: $color-hover-link-button;
+                    color: white;
+                    padding: 15px 25px;
+                    text-transform: uppercase;
+                    border: 1px solid $color-hover-link-button;
+                }
+            }
+            .colonna-4{
+                width: calc(( 100% / 4 ) - 30px );
+                .container-img{
+                    width: 100%;
+                    @include my-display-flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    overflow: hidden;
+                    justify-content: space-between;
+
+                    img{
+                        width: calc(( 100% / 4 ) - 7px );
+                        height: 41.75px;
+                        overflow: hidden;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// .scorrimento-mappa{
+//     width: 100%;
+//     height: 350px;
+//     overflow: hidden;
+//     @include my-display-flex;
+//     align-items: center;
+//     flex-wrap: wrap;
+//     img{
+//         width: calc(( 100% / 8 ));
+//     }
+// }

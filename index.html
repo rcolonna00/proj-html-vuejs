@@ -419,40 +419,45 @@
             <section id="mappa">
                 
                 <div class="scorrimento-mappa">
+                    
+                    <img 
+                        v-for='(imgMap, index) in imgMaps' 
+                        :class="{active : index == activeImgSponsors}"
+                        :src="imgMap" alt=""
+                    >
                     <!-- INIZIO PRIMA RIGA -->
-                    <img src="img/vt (23).png" alt="">
+                    <!-- <img src="img/vt (23).png" alt="">
                     <img src="img/vt (17).png" alt="">
                     <img src="img/vt (11).png" alt="">
                     <img src="img/vt (1).png" alt="">
                     <img src="img/vt (5).png" alt="">
                     <img src="img/vt (4).png" alt="">
                     <img src="img/vt (9).png" alt="">
-                    <img src="img/vt (20).png" alt="">
+                    <img src="img/vt (20).png" alt=""> -->
                     <!-- FINE PRIMA RIGA -->
 
-                
 
                     <!-- INIZIO SECONDA RIGA -->
-                    <img src="img/vt (19).png" alt="">
+                    <!-- <img src="img/vt (19).png" alt="">
                     <img src="img/vt (13).png" alt="">
                     <img src="img/vt (12).png" alt="">
                     <img src="img/vt (2).png" alt="">
                     <img src="img/vt.png" alt="">
                     <img src="img/vt (3).png" alt="">
                     <img src="img/vt (15).png" alt="">
-                    <img src="img/vt (18).png" alt="">
+                    <img src="img/vt (18).png" alt=""> -->
                     <!-- FINE SECONDA RIGA -->
 
 
                     <!-- INIZIO TERZA RIGA -->
-                    <img src="img/vt (22).png" alt="">
+                    <!-- <img src="img/vt (22).png" alt="">
                     <img src="img/vt (16).png" alt="">
                     <img src="img/vt (8).png" alt="">
                     <img src="img/vt (10).png" alt="">
                     <img src="img/vt (6).png" alt="">
                     <img src="img/vt (7).png" alt="">
                     <img src="img/vt (14).png" alt="">
-                    <img src="img/vt (21).png" alt="">
+                    <img src="img/vt (21).png" alt=""> -->
                     <!-- FINE TERZA RIGA -->
                 
                 </div>
@@ -783,8 +788,6 @@
                     </div>
                 </div>
 
-                
-
             </section>
             <!-- FINE SPONSORS -->
 
@@ -793,7 +796,114 @@
 
         <!-- INIZIO FOOTER -->
         <footer>
+            <div class="footer-top">
+                <div class="container">
 
+                    <!-- INIZIO SINGOLA COLONNA-1 -->
+                    <div class="colonna-1">
+                        <h3> about us</h3>
+                        <p>
+                            Cum sociis natoque penatibus et 
+                            magnis dis parturient montes,
+                            nascetur ridiculus mus. 
+                        </p>
+                        <!-- <div class="icon">
+                            <a href="#">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-twitter-square"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-google-plus-square"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-pinterest-square"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fas fa-comment-dots"></i>
+                            </a>
+                        </div> -->
+                        <div 
+                        class="icon">
+                        
+                            <ul>
+                                <li
+                                v-for='(icon, index) in footerIcon'
+                                :class="{active : index == activeFooterIcon}"
+                                >
+                                    <a href=""><i :class="icon"></i></a>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    <!-- FINE SINGOLA COLONNA-1 -->
+
+                    <!-- INIZIO SINGOLA COLONNA-2 -->
+                    <div class="colonna-2">
+                        <h3>recent news</h3>
+                        <ul>
+                            <li v-for="(news, index) in recentNews">
+                                <a :class="{active : index == activeRecentNews}" href="#">
+                                    <i class="fas fa-chevron-right"></i>
+                                    {{news}}
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- FINE SINGOLA COLONNA-2 -->
+
+                    <!-- INIZIO SINGOLA COLONNA-3 -->
+                    <div class="colonna-3">
+                        <h3>get your seat</h3>
+                        <p>
+                            Book for your seat before it's too rate.
+                            <br>
+                            We provide variety of ticket options.
+                        </p>
+                        <button>check out tickets!</button>
+                    </div>
+                    <!-- FINE SINGOLA COLONNA-3 -->
+
+                    <!-- INIZIO SINGOLA COLONNA-4 -->
+                    <div class="colonna-4">
+                        <h3>gallery from last year</h3>
+                        <div class="container-img">
+                            
+                            <img 
+                            v-for='(image, index) in footerImage' 
+                            :class="{active : index == activeFooterImage}"
+                            :src="image" alt=""
+                            >
+
+                            <!-- <img src="img/photodune-7770665-two-white-coffee-mug-with-diy-decoration-o.jpg" alt="">
+                            <img src="img/photodune-8523683-speaker-at-business-convention-and-present (1).jpg" alt="">
+                            <img src="img/photodune-6745579-modern-creative-man-relaxing-on-workspace- (1).jpg" alt="">
+                            <img src="img/2-item-1.jpg" alt="">
+                            
+                            <img src="img/photodune-8797753-multiethnic-people-with-startup-business-t.jpg" alt="">
+                            <img src="img/card04-150x150.jpg" alt="">
+                            <img src="img/photodune-6745606-man-wristwatch-calendar-key-and-glasses-on.jpg" alt="">
+                            <img src="img/photodune-6745585-modern-creative-workspace-m.jpg" alt="">
+
+                            <img src="img/6426608875_186070f8ca_o-150x150.jpg" alt="">
+                            <img src="img/card01-150x150.jpg" alt="">
+                            <img src="img/13349065283_64d09b067c_o-150x150.jpg" alt="">
+                            <img src="img/photodune-8795110-overhead-of-essentials-denim-clothes-m-150.jpg" alt=""> -->
+
+                        </div>
+                    </div>
+                    <!-- FINE SINGOLA COLONNA-4 -->
+
+                </div>
+            </div>
+            <div class="footer-bottom">
+
+            </div>
         </footer>
         <!-- FINE FOOTER -->
 
