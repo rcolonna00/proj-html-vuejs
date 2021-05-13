@@ -708,7 +708,7 @@ main #sponsors .sponsor img {
 
 footer .footer-top {
   padding: 50px 0;
-  background-color: black;
+  background-color: #212121;
   width: 100%;
 }
 footer .footer-top .container {
@@ -786,4 +786,26 @@ footer .footer-top .container .colonna-4 .container-img img {
   height: 41.75px;
   overflow: hidden;
   margin-bottom: 10px;
+}
+footer .footer-bottom {
+  padding: 20px 0;
+  background-color: black;
+}
+footer .footer-bottom .container {
+  display: flex;
+  color: #9c9c9c;
+  justify-content: space-between;
+  font-size: 13px;
+}
+footer .footer-bottom .container .informazioni ul {
+  display: flex;
+}
+footer .footer-bottom .container .informazioni ul li {
+  border-right: 1px solid #9c9c9c;
+  padding: 0 8px;
+  list-style-type: none;
+}
+footer .footer-bottom .container .informazioni ul li a {
+  text-decoration: none;
+  color: #9c9c9c;
 }

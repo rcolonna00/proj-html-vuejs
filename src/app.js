@@ -2,6 +2,7 @@ var app = new Vue(
     {
         el: '#root',
         data: {
+            activeIndex: 0,
             menuLink: [ 
                 "Home", 
                 "Pages", 
@@ -11,9 +12,7 @@ var app = new Vue(
                 "Blog", 
                 "Shortcodes" 
             ],
-            activeMenuLink : 0,
             imgSponsors: [ "1", "2", "3", "4", "5", "6" ],
-            activeImgSponsors: 0,
             imgMaps: [
 
                 // INIZIO PRIMA RIGA
@@ -49,7 +48,6 @@ var app = new Vue(
                 "img/vt (21).png",
                 // INIZIO TERZA RIGA
             ],
-            activeImgMaps: 0,
             footerIcon: [
                 "fab fa-facebook-square",
                 "fab fa-twitter-square",
@@ -58,7 +56,6 @@ var app = new Vue(
                 "fab fa-pinterest-square",
                 "fas fa-comment-dots"
             ],
-            activeFooterIcon: 0,
             recentNews: [
                 "sem porta mollis parturient",
                 "nullam lorem mattis purus",
@@ -66,7 +63,6 @@ var app = new Vue(
                 "donec luctus imperdiet",
                 "magna pars studiorum"
             ],
-            activeRecentNews: 0,
             footerImage: [
                 // prima riga
                 "img/photodune-7770665-two-white-coffee-mug-with-diy-decoration-o.jpg",
@@ -86,7 +82,12 @@ var app = new Vue(
                 "img/13349065283_64d09b067c_o-150x150.jpg",
                 "img/photodune-8795110-overhead-of-essentials-denim-clothes-m-150.jpg"
             ],
-            activeFooterImage: 0,
+            supportoInformazioni:[
+                "About Us",
+                "Accomodation",
+                "Call for Paper",
+                "Contact Us",
+            ],
         },
         methods: {
 

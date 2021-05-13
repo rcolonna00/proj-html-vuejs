@@ -39,7 +39,7 @@
                     <div class="menu">
                         <ul>
                             <li v-for="(link, index) in menuLink">
-                                <a :class="{active : index == activeMenuLink}" href="#">
+                                <a :class="{active : index == activeIndex}" href="#">
                                     {{link}}
                                 </a>
                             </li>
@@ -422,7 +422,7 @@
                     
                     <img 
                         v-for='(imgMap, index) in imgMaps' 
-                        :class="{active : index == activeImgSponsors}"
+                        :class="{active : index == activeIndex}"
                         :src="imgMap" alt=""
                     >
                     <!-- INIZIO PRIMA RIGA -->
@@ -782,7 +782,7 @@
                     <div class="sponsor">
                         <img 
                         v-for='(imgSponsor, index) in imgSponsors' 
-                        :class="{active : index == activeImgSponsors}"
+                        :class="{active : index == activeIndex}"
                         :src="'img/banner-' + imgSponsor + '.jpg'" alt=""
                         >
                     </div>
@@ -833,7 +833,7 @@
                             <ul>
                                 <li
                                 v-for='(icon, index) in footerIcon'
-                                :class="{active : index == activeFooterIcon}"
+                                :class="{active : index == activeIndex}"
                                 >
                                     <a href=""><i :class="icon"></i></a>
                                 </li>
@@ -848,7 +848,7 @@
                         <h3>recent news</h3>
                         <ul>
                             <li v-for="(news, index) in recentNews">
-                                <a :class="{active : index == activeRecentNews}" href="#">
+                                <a :class="{active : index == activeIndex}" href="#">
                                     <i class="fas fa-chevron-right"></i>
                                     {{news}}
                                 </a>
@@ -876,7 +876,7 @@
                             
                             <img 
                             v-for='(image, index) in footerImage' 
-                            :class="{active : index == activeFooterImage}"
+                            :class="{active : index == activeIndex}"
                             :src="image" alt=""
                             >
 
@@ -902,7 +902,22 @@
                 </div>
             </div>
             <div class="footer-bottom">
-
+                <div class="container">
+                    <div class="copyright">
+                        <i class="far fa-copyright"></i>
+                        Copyright GoodLayers, All Right Reserved
+                    </div>
+                    <div class="informazioni">
+                        <ul>
+                            <li v-for="(informazioni, index) in supportoInformazioni">
+                                <a :class="{active : index == activeIndex}" href="#">
+                                    {{ informazioni }}
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
             </div>
         </footer>
         <!-- FINE FOOTER -->
